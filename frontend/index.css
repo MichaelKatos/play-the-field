@@ -33,16 +33,18 @@ section {
   background-color: rgb(24, 39, 80);
   margin: auto;
   margin-top: 0;
-  box-shadow: inset hsla(192, 60%, 85%, 0.9) 0 2px 3px, hsla(0, 50%, 18%, 0.5) -1px 5px 5px;
+  box-shadow: inset hsla(192, 60%, 85%, 0.9) 0 2px 3px,
+    hsla(0, 50%, 18%, 0.5) -1px 5px 5px;
 }
 
 @media screen and (min-width: 700px) {
   .scoreboard {
     height: 30vh;
+    width: 60%;
   }
 }
 
-img[alt="Logo-Scoreboard"] {
+img[alt='Logo-Scoreboard'] {
   width: 50vw;
   max-width: 350px;
   display: block;
@@ -53,8 +55,8 @@ img[alt="Logo-Scoreboard"] {
 }
 
 @media screen and (min-width: 700px) {
-  img[alt="Logo-Scoreboard"] {
-    height: 20vh;
+  img[alt='Logo-Scoreboard'] {
+    height: 17vh;
     width: 35vw;
   }
 }
@@ -62,7 +64,7 @@ img[alt="Logo-Scoreboard"] {
 h2 {
   font-family: 'score_boardregular';
   color: rgb(225, 30, 38);
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.3em;
   padding: 0;
   padding-top: 20px;
@@ -78,8 +80,8 @@ h2 {
   overflow: hidden;
 }
 
-img[alt="stands"] {
-  width: 85%;
+img[alt='stands'] {
+  width: 55%;
   display: block;
   margin: auto;
   margin-top: -2%;
@@ -92,7 +94,8 @@ img[alt="stands"] {
   box-shadow: inset hsla(138, 81%, 5%, 0.2) 0 70px 40px;
   height: 100%;
   width: 100%;
-  margin-top: -5%;
+  margin-top: -3%;
+  display: flex;
 }
 
 .grass img {
@@ -101,6 +104,15 @@ img[alt="stands"] {
   display: block;
   -webkit-filter: drop-shadow(2px 2px 2px #222);
   filter: drop-shadow(2px 2px 2px #222);
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .grass img {
+    width: 100%;
+    max-height: 500px;
+  }
 }
 
 .red {
@@ -127,8 +139,6 @@ img[alt="stands"] {
   word-wrap: break-word;
   position: relative;
 }
-
-
 
 .stand {
   width: 90%;
