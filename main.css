@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: skyblue;
+}
+
+.top-mast {
+  background-color: skyblue;
+  height: 50vh;
+  position: relative;
+}
+
+img[src="./assets/splash-01.png"] {
+  width: 80%;
+  position: absolute;
+  top: 10px;
+  left: 12%;
+}
+
+
+.bottom-mast {
+  background: url(./assets/splash-03.png);
+  position: relative;
+}
+
+img[src="./assets/splash-04.png"] {
+  width: 90%;
+  position: absolute;
+  bottom: -10px;
+  left: 7%;
+  z-index: 10;
+}
+
+.masthead {
+  margin: auto;
+  width: 90%;
+}
+
+img[src="./assets/splash-02.png"] {
+  width: 105vw;
+  z-index: 100 important;
+  position: absolute;
+  top: 60%;
+}
+
+.scoreboard {
+  width: 95vw;
+  margin: auto;
+  margin-top: 18vh;
+  height: 55vh;
+  background: rgb(24, 39, 80);
+  position: relative;
+  box-shadow: inset hsla(192, 60%, 85%, 0.3) -1px 3px 9px, hsla(0, 50%, 18%, 0.3) -1px 5px 5px;
+
+}
+
+.scoreboard img[src="./assets/splash-01.png"] {
+  position: absolute;
+  top: -17vh;
+  left: 18%;
+  width: 65%;
+  z-index: -5;
+}
+
+.scoreboard img[src="./assets/splash-02.png"] {
+  position: absolute;
+  top: 320px;
+  width: 115%;
+  margin-left: -9%;
+  z-index: 1;
+}
+
+hr {
+  background-image: url('./assets/splash-05.png');
+  height: 50px;
+  border: none;
+}
+
+/* .grass {
+  background: url('./assets/splash-03.png');
+  height: 50vh;
+  /* position: sticky; */
+/* bottom: 0; */

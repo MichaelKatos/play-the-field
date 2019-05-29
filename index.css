@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'score_boardregular';
+  src: url('./assets/scoreboard-webfont.woff2') format('woff2'),
+    url('./assets/scoreboard-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  background: skyblue;
+}
+
+section {
+  height: calc(100vh - 16px);
+  width: 100vw;
+  overflow: hidden;
+}
+
+.scoreboard {
+  display: block;
+  z-index: 100 !important;
+  width: 90%;
+  height: 40vh;
+  background-color: rgb(24, 39, 80);
+  margin: auto;
+  margin-top: 0;
+  box-shadow: inset hsla(192, 60%, 85%, 0.9) 0 2px 3px, hsla(0, 50%, 18%, 0.5) -1px 5px 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .scoreboard {
+    height: 30vh;
+  }
+}
+
+img[alt="Logo-Scoreboard"] {
+  width: 50vw;
+  max-width: 350px;
+  display: block;
+  margin: auto;
+  z-index: -1;
+  -webkit-filter: drop-shadow(1px 1px 0.5px #222);
+  filter: drop-shadow(1px 1px 0.5px #222);
+}
+
+@media screen and (min-width: 700px) {
+  img[alt="Logo-Scoreboard"] {
+    height: 20vh;
+    width: 35vw;
+  }
+}
+
+h2 {
+  font-family: 'score_boardregular';
+  color: rgb(225, 30, 38);
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  padding: 0;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 38px;
+  margin: 0;
+}
+
+.stands {
+  width: 100%;
+  margin: auto;
+  z-index: 0;
+  overflow: hidden;
+}
+
+img[alt="stands"] {
+  width: 85%;
+  display: block;
+  margin: auto;
+  margin-top: -2%;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+.grass {
+  background: url('./assets/landing-page-03.png') 50% 50%;
+  box-shadow: inset hsla(138, 81%, 5%, 0.2) 0 70px 40px;
+  height: 100%;
+  width: 100%;
+  margin-top: -5%;
+}
+
+.grass img {
+  width: 100%;
+  max-height: 300px;
+  display: block;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+.red {
+  width: 50%;
+  height: 20vh;
+  margin: auto;
+  background: red;
+}
+
+.red img {
+  margin: auto;
+  max-height: 30vh;
+  height: 25vh;
+}
+
+.green {
+  width: 100%;
+  height: 45vh;
+  margin: auto;
+  /* background: green; */
+  font-family: 'score_boardregular';
+  font-size: 50px;
+  color: red;
+  word-wrap: break-word;
+  position: relative;
+}
+
+
+
+.stand {
+  width: 90%;
+  margin: auto;
+  height: 5vh;
+  background: green;
+}
+
+.blue {
+  width: 100%;
+  height: 20vh;
+  margin: auto;
+  padding-top: 15vh;
+  background: url('./assets/splash-03.png');
+  position: relative;
+}
+
+.blue img {
+  position: absolute;
+  bottom: 0;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
